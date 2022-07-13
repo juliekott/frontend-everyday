@@ -1,0 +1,1 @@
+Site is available at: https://juliekott.github.io/frontend-everyday/task1/
