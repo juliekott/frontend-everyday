@@ -1,0 +1,145 @@
+body {
+	background: black;
+	color: white;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	font-family: Inter-Regular;
+} /*Какие-то свойства я подсматривала в самой фигме, но вообще я верстаю лишь свой второй макет и с фигмой пока на "вы",
+поэтому не уверена в правильности своего решения*/
+
+.info-skills {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	position: absolute;
+	width: 460px;
+	height: 420px;
+	left: 99px;
+	top: 320px;
+} /*Хотела изначально сделать колонки через css grid, но тогда не получалось подогнать под макет колонки и содержимое*/
+
+h1 {
+	font-size: 75px;
+	line-height: 75px;
+	position: absolute;
+	width: 401px;
+	height: 150px;
+	left: 100px;
+	top: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-top: 10px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.bio {
+	padding-top: 20px;
+}
+
+.text {
+	margin-top: -10px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+} /*Вот тут мои любимые гриды наоборот, очень хорошо влезли х)*/
+
+.grey-text {
+	color: gray;
+}
+
+.border-internet-bar {
+	height: 7px;
+	width: 460px;
+	background-color: gray;
+	border-radius: 10px;
+}
+
+.internet-bar {
+	height: 7px;
+	width: 50%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.borer-media-bar{
+	height: 7px;
+	width: 460px;
+	background-color: gray;
+	border-radius: 10px;
+}
+
+.media-bar {
+	height: 7px;
+	width: 30%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.border-shop-bar {
+	height: 7px;
+	width: 460px;
+	background-color: gray;
+	border-radius: 10px;
+}
+
+.shop-bar {
+	height: 7px;
+	width: 50%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;	
+	position: absolute;
+	width: 461px;
+	height: 635px;
+	left: 610px;
+	top: 97px;
+}
+
+
+.photo-main {
+	display: flex;
+
+}
+
+.avatar {
+	position: absolute;
+	border-radius: 10px;
+	width: 460px;
+	height: 750px;
+	left: 1120px;
+	top: 50px;
+}
+
+q {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 35px;
+	position: absolute;
+	width: 375px;
+	height: 105px;
+	left: 1155px;
+	top: 612px;
+} /*а здесь уже наоборот, сразу как увидела текст на картинке, вспомнила про флексы*/
+
+@font-face {
+font-family: "Inter-Regular"; 
+src: url("fonts/Inter-Regular.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
