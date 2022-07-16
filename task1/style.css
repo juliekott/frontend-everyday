@@ -1,3 +1,4 @@
+@media handheld {
 body {
 	background: black;
 	color: white;
@@ -5,7 +6,9 @@ body {
 	font-size: 15px;
 	line-height: 25px;
 	font-family: Inter-Regular;
-} /*Какие-то свойства я подсматривала в самой фигме, но вообще я верстаю лишь свой второй макет и с фигмой пока на "вы",
+	max-width: 500px;
+	} 
+}/*Какие-то свойства я подсматривала в самой фигме, но вообще я верстаю лишь свой второй макет и с фигмой пока на "вы",
 поэтому не уверена в правильности своего решения*/
 
 .info-skills {
@@ -13,8 +16,8 @@ body {
 	flex-direction: column;
 	padding: 0px;
 	position: absolute;
-	width: 460px;
-	height: 420px;
+	max-width: 460px;
+	max-height: 420px;
 	left: 99px;
 	top: 320px;
 } /*Хотела изначально сделать колонки через css grid, но тогда не получалось подогнать под макет колонки и содержимое*/
