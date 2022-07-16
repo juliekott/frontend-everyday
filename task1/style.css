@@ -1,4 +1,3 @@
-@media only screen {
 body {
 	background: black;
 	color: white;
@@ -145,8 +144,12 @@ src: url("fonts/Inter-Regular.otf") format("truetype");
 font-style: normal; 
 font-weight: normal; 
 } 
-}
 
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
 .about {
 		display: flex;
 		flex-direction: column;
@@ -180,4 +183,5 @@ font-weight: normal;
 		left: 99px;
 		top: 320px;
 		border-color: red;
+}
 }
