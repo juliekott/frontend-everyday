@@ -1,4 +1,3 @@
-@media handheld {
 body {
 	background: black;
 	color: white;
@@ -6,9 +5,8 @@ body {
 	font-size: 15px;
 	line-height: 25px;
 	font-family: Inter-Regular;
-	max-width: 500px;
 	} 
-}/*Какие-то свойства я подсматривала в самой фигме, но вообще я верстаю лишь свой второй макет и с фигмой пока на "вы",
+/*Какие-то свойства я подсматривала в самой фигме, но вообще я верстаю лишь свой второй макет и с фигмой пока на "вы",
 поэтому не уверена в правильности своего решения*/
 
 .info-skills {
@@ -146,3 +144,36 @@ src: url("fonts/Inter-Regular.otf") format("truetype");
 font-style: normal; 
 font-weight: normal; 
 } 
+
+@media handheld {
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;	
+	position: absolute;
+	width: 33%;
+	height: 635px;
+	left: 610px;
+	top: 97px;
+}
+
+.avatar {
+	position: absolute;
+	border-radius: 10px;
+	width: 33%;
+	height: 750px;
+	left: 1120px;
+	top: 50px;
+}
+.info-skills {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	position: absolute;
+	width: 33%;
+	height: 420px;
+	left: 99px;
+	top: 320px;
+}
+}
